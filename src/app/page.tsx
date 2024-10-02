@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import Shop from '@/components/Shop/Shop'
 import AboutUs from '@/components/AboutUs/AboutUs'
 import ContactUs from '@/components/ContactUs/ContactUs'
+import Footer from '@/components/Footer/Footer'
 import {NextUIProvider} from "@nextui-org/system";
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
         <ContactUs />
        {/* <Members />
         <Research />
-        <Articles />
-        <Footer /> */}
+        <Articles />*/}
+        <Footer /> 
       </NextUIProvider>
     </div>
   );
