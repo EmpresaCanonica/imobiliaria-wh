@@ -11,7 +11,7 @@ type Props = {
 export default function InfoCard({ title, description, icon }: Props) {
   return (
 
-    <div className='w-[17rem] flex-col flex'>
+    <div className='w-[17rem] flex-col flex py-2'>
       
       {icon && <span className="mr-1 text-5xl ">{icon}</span>}
       

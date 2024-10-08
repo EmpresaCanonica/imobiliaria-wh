@@ -10,7 +10,7 @@ import { label } from 'framer-motion/client';
 export default function ContactUs() {
   return (
 
-    <div className='w-full bg-off h-[64rem] flex justify-between items-center mx-auto'>
+    <div id='Contato' className='w-full bg-off md:h-[64rem] h-[50rem] flex justify-between items-center mx-auto'>
 
         <div className='hidden h-[38rem] w-[70rem]  md:flex justify-between items-center mx-auto gap-4 px-[1rem]'>
 
@@ -24,17 +24,17 @@ export default function ContactUs() {
                     </h3>
                 </div>
                     <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-                        <Input type="Nome" label="Nome"  labelPlacement="inside" className='text-black' classNames={{label:"text-black ", inputWrapper:"bg-white"}} variant='bordered' />
-                        <Input type="Sobrenome" label="Sobrenome"  labelPlacement="inside" className='text-black' classNames={{label:"text-black ", inputWrapper:"bg-white"}} variant='bordered' />
+                        <Input type="Nome" label="Nome"  labelPlacement="inside" className='text-black' classNames={{label:"text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}} variant='bordered' />
+                        <Input type="Sobrenome" label="Sobrenome"  labelPlacement="inside" className='text-black' classNames={{label:"text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}} variant='bordered' />
                     </div>
 
-                    <Input type="email" label="Email"  labelPlacement="inside" className='text-black' variant='bordered'  classNames={{label:"text-black ", inputWrapper:"bg-white"}}   />
+                    <Input type="email" label="Email"  labelPlacement="inside" className='text-black' variant='bordered'  classNames={{label:"text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}}   />
                     
                     <Textarea
                         label="Sua Mensagem"
                         placeholder=""
-                        classNames={{label:"text-black ", inputWrapper:"bg-white"}}
-                        className='text-black'
+                        classNames={{label:"text-black group-data-[filled=true]:text-gray-600 ", inputWrapper:"bg-white"}}
+                        className='text-black '
                         variant="bordered"
                         
                     />

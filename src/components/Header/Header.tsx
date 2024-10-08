@@ -1,28 +1,20 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import {Divider} from "@nextui-org/divider";
+import Image from 'next/image'
 
 import LogoV from '@/assets/Logo Vertical.svg'
 import LogoH from '@/assets/Logo Horizontal.svg'
+
 import {ItemMenu} from '@/components/UI/NavbarButton'
 import {ItemMenuNav} from '@/components/UI/NavbarButtonMobile'
+
 import { HiInformationCircle } from "react-icons/hi";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdShoppingCart } from "react-icons/md";
-import { FaUserFriends } from "react-icons/fa";
-
+import { FaUserFriends, FaSearch } from "react-icons/fa";
 import { TiHome } from "react-icons/ti";
-
 import {AiOutlineClose,AiOutlineMenu} from 'react-icons/ai'
-import Image from 'next/image'
-import {Navbar,   
-        NavbarBrand,   
-        NavbarContent,   
-        NavbarItem,   
-        NavbarMenuToggle,  
-        NavbarMenu,  
-        NavbarMenuItem} 
-        from "@nextui-org/navbar";
+
 
 export default function Header () {
   
@@ -50,13 +42,13 @@ export default function Header () {
   }, []);
 
   return (
-  <nav className={`fixed h-[8rem] w-full flex items-center z-40 transition-colors duration-500 ${navBg ? 'bg-detail-beige' : 'bg-transparent'}`}>
+  <nav className={`fixed h-[8rem] w-full flex items-center z-40 transition-colors duration-500 ${navBg ? 'bg-detail-light-beige shadow-2xl  ' : 'bg-transparent'}`}>
     <div className="flex mx-auto items-center justify-between w-[70.5rem] ">
       <ul className='hidden md:flex mx-auto items-center justify-between w-[70.5rem]  text-primary-brown font-bold'>
         
-        <li><ItemMenu name='Início' anchorId='' /></li>
-        <li><ItemMenu name='Vendas' anchorId='' /></li>
-        <li><ItemMenu name='Informações' anchorId='' /></li>
+        <li><ItemMenu name='Início' anchorId='HeroSection' /></li>
+        <li><ItemMenu name='Vendas' anchorId='Vendas' /></li>
+        <li><ItemMenu name='Sobre nós' anchorId='Sobre nós' /></li>
 
         <li>
           <a href='/'>
@@ -68,9 +60,10 @@ export default function Header () {
           </a>
         </li>
 
-        <li><ItemMenu name='Contato' anchorId='' /></li>
-        <li><ItemMenu name='Localização' anchorId='' /></li>
-        <li><ItemMenu name='Sobre nós' anchorId='' /></li>
+     
+        <li><ItemMenu name='Buscar' anchorId='Buscar' /></li>
+        <li><ItemMenu name='Contato' anchorId='Contato' /></li>
+        <li><ItemMenu name='Informações' anchorId='Informacoes' /></li>
         
       </ul>
 
@@ -97,12 +90,12 @@ export default function Header () {
             />
         </a>
         <ul className='py-[3rem] text-center text-primary-dark-brown'>
-            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<TiHome />} name='Início' anchorId=''/>    </li>
-            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<MdShoppingCart/>} name='Vendas' anchorId='' />      </li>
-            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<HiInformationCircle/>} name='Informações' anchorId=''/>     </li>
-            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<FaPhone/>} name='Contato' anchorId='' />    </li>
-            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<FaLocationDot/>} name='Localização' anchorId='' />     </li>
-            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<FaUserFriends />} name='Nosso trabalho' anchorId='' />       </li>
+            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<TiHome />} name='Início' anchorId='HeroSection'/>    </li>
+            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<MdShoppingCart/>} name='Vendas' anchorId='Vendas' />      </li>
+            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<FaUserFriends />} name='Nosso trabalho' anchorId='Sobre nós' />       </li>
+            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<FaSearch/>} name='Buscar' anchorId='Buscar' />     </li>
+            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<FaPhone/>} name='Contato' anchorId='Contato' />    </li>
+            <li className='p-2 pl-8  my-2 text-start'>    <ItemMenuNav icon={<HiInformationCircle/>} name='Informações' anchorId='Informacoes'/>     </li>
         </ul>
       </div>
 

@@ -20,44 +20,72 @@ export default function Window (){
         </div>
         
         <div className="flex w-full flex-wrap md:flex justify-between items-center px-20">
+          {/* Botão 1 */}
         <Select 
           label="Localização" 
-          variant={"flat"}
-          className="w-[10rem]  rounded-2xl py-8 px-2 " 
-          
+          variant={"bordered"}
+          className=" w-[10rem]  rounded-2xl py-2 px-2"
+          classNames={{
+            helperWrapper: "bg-red-500  ",
+            label: "group-data-[filled=true]:-translate-y-5 group-data-[filled=true]:text-off text-off ",
+            trigger: "min-h-16 bg-detail-beige focus:bg-detail-beige hover:bg-detail-beige",
+            popoverContent: "bg-detail-beige   ",
+          }}
         >
+        
         {cidade.map((city) => (
-          <SelectItem key={city.key} className=''>
+          <SelectItem key={city.key} 
+          className= ' custom-select-item bg-detail-light-beige focus:bg-detail-light-beige hover:bg-detail-beige text-black'>
             {city.label}
           </SelectItem>
         ))}
+
       </Select>
 
+          {/* Botão 2 */}
         <Select 
           label="Tipo" 
-          variant={"flat"}
-          className="w-[10rem] rounded-2xl py-8 px-2" 
-          
-      >
+          variant={"bordered"}
+          className=" w-[10rem]  rounded-2xl py-2 px-2"
+          classNames={{
+            helperWrapper: "bg-red-500  ",
+            label: "group-data-[filled=true]:-translate-y-5 group-data-[filled=true]:text-off text-off ",
+            trigger: "min-h-16 bg-detail-beige focus:bg-detail-beige hover:bg-detail-beige",
+            popoverContent: "bg-detail-beige   ",
+          }}
+        >
+        
         {tipo.map((type) => (
-          <SelectItem key={type.key} className=''>
+          <SelectItem key={type.key} 
+          className= ' custom-select-item bg-detail-light-beige focus:bg-detail-light-beige hover:bg-detail-beige text-black'>
             {type.label}
           </SelectItem>
         ))}
+
       </Select>
 
+          {/* Botão 3 */}
         <Select 
           label="Valor" 
-          variant={"flat"}
-          className="w-[10rem] s rounded-2xl px-2" 
-          
-      >
+          variant={"bordered"}
+          className=" w-[14rem]  rounded-2xl py-4 px-2"
+          classNames={{
+            helperWrapper: "bg-red-500  ",
+            label: "group-data-[filled=true]:-translate-y-5 group-data-[filled=true]:text-off text-off ",
+            trigger: "min-h-16 bg-detail-beige focus:bg-detail-beige hover:bg-detail-beige",
+            popoverContent: "bg-detail-beige   ",
+          }}
+        >
+        
         {preco.map((value) => (
-          <SelectItem key={value.key} className=''>
+          <SelectItem key={value.key} 
+          className= ' custom-select-item bg-detail-light-beige focus:bg-detail-light-beige hover:bg-detail-beige text-black'>
             {value.label}
           </SelectItem>
         ))}
+
       </Select>
+
       
       <Button className="bg-detail-beige text-off w-[2rem] h-[2rem] px-0 py-7 " endContent={<FaSearch/>}>
       
