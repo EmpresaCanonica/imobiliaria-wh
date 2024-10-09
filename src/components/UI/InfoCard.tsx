@@ -15,11 +15,11 @@ export default function InfoCard({ title, description, icon }: Props) {
       
       {icon && <span className="mr-1 text-5xl ">{icon}</span>}
       
-      <h1 className='text-3xl py-4'>
+      <h1 className='text-3xl py-4 font-body'>
       {title}
       </h1>
 
-      <h3 className='text-base text-justify font-extralight'>
+      <h3 className='text-base text-justify font-extralight font-rest'>
       {description}
       </h3>
     </div>

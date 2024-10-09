@@ -27,17 +27,17 @@ export default function HeroSection (){
             <div className='md:w-[30rem] w-[24rem] md:pl-0 pl-[2rem]'>
                 {/* Texto */}
                 <div className="pb-[4rem]">
-                    <h1 className="md:text-4xl text-3xl text-praimary-light-brown font-bold pb-2">
+                    <h1 className="md:text-4xl text-3xl text-praimary-light-brown font-body font-bold pb-2">
                         Seu próximo lar está a um clique de distância. Vamos encontrá-lo juntos!
                     </h1>
-                    <h3 className="text-detail-beige md:text-medium text-sm w-[60%] md:w-[100%]">
+                    <h3 className="text-detail-beige md:text-medium text-sm w-[60%] md:w-[100%] font-rest">
                         Entre em contato e encontre o lugar ideal para chamar de lar!
                     </h3>
                 </div>
                 {/* Botões */}
                 <div className="mb-[4rem]">
             <Button 
-                className="bg-detail-beige text-off" 
+                className="bg-detail-beige text-off font-rest" 
                 endContent={<FaCircleArrowDown />}
                 onClick={() => scrollToSection('Contato')} // Usar o id da seção de contato
             >
@@ -45,7 +45,7 @@ export default function HeroSection (){
             </Button>
 
             <Button 
-                className="bg-detail-beige text-off mx-4" 
+                className="bg-detail-beige text-off mx-4 font-rest" 
                 endContent={<FaCircleArrowDown />}
                 onClick={() => scrollToSection('Sobre nós')} // Usar o id da seção Sobre nós
             >

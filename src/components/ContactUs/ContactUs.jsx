@@ -16,29 +16,29 @@ export default function ContactUs() {
 
             <div className='w-[50%] h-full flex flex-col justify-between'>
                 <div className='text-black  flex-col flex  items-start justify-center text-left'>
-                    <h1 className='text-3xl pb-2'>
+                    <h1 className='text-3xl pb-2 font-body font-semibold'>
                         Fale com a gente!
                     </h1>
-                    <h3 className='text-base'>
+                    <h3 className='text-base font-rest'>
                         Envie um e-mail direto do nosso site e tire suas dúvidas.
                     </h3>
                 </div>
                     <div className="flex w-full flex-wrap md:flex-nowrap gap-4">
-                        <Input type="Nome" label="Nome"  labelPlacement="inside" className='text-black' classNames={{label:"text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}} variant='bordered' />
-                        <Input type="Sobrenome" label="Sobrenome"  labelPlacement="inside" className='text-black' classNames={{label:"text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}} variant='bordered' />
+                        <Input type="Nome" label="Nome"  labelPlacement="inside" className='text-black' classNames={{label:" font-rest text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}} variant='bordered' />
+                        <Input type="Sobrenome" label="Sobrenome"  labelPlacement="inside" className='text-black' classNames={{label:" font-rest text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}} variant='bordered' />
                     </div>
 
-                    <Input type="email" label="Email"  labelPlacement="inside" className='text-black' variant='bordered'  classNames={{label:"text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}}   />
+                    <Input type="email" label="Email"  labelPlacement="inside" className='text-black' variant='bordered'  classNames={{label:" font-rest text-black group-data-[filled=true]:text-gray-600  ", inputWrapper:"bg-white"}}   />
                     
                     <Textarea
                         label="Sua Mensagem"
                         placeholder=""
-                        classNames={{label:"text-black group-data-[filled=true]:text-gray-600 ", inputWrapper:"bg-white"}}
+                        classNames={{label:" font-rest text-black group-data-[filled=true]:text-gray-600 ", inputWrapper:"bg-white"}}
                         className='text-black '
                         variant="bordered"
                         
                     />
-                     <Button className="bg-primary-dark-brown text-off w-full h-[2rem] px-0 py-7 " >
+                     <Button className="bg-primary-dark-brown text-off w-full h-[2rem] px-0 py-7 font-rest  " >
                         Enviar
                      </Button>
                 

@@ -52,8 +52,8 @@ export default function Shop (){
         </h1>
     </div>
     <div className='flex h-[10rem] w-full text-left items-end'>
-        <h1 className='text-black text-3xl font-semibold pl-[2rem]'>
-            Apartamentos
+        <h1 className='text-black text-3xl  pl-[1rem] font-body font-bold'>
+            Apartamentos disponíveis
         </h1>
     </div>
     
@@ -95,8 +95,8 @@ export default function Shop (){
         </h1>
     </div>
     <div className='flex h-[10rem] w-full text-left items-end'>
-        <h1 className='text-black text-3xl font-semibold pl-[2rem]'>
-            Casas
+        <h1 className='text-black text-3xl  pl-[1rem] font-body font-bold'>
+            Casas disponíveis
         </h1>
     </div>
 

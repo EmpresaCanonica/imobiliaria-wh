@@ -11,15 +11,15 @@ export default function Window (){
     return (
     <div className='w-[30rem] md:w-[49rem] bg-off md:h-[13rem] h-[20rem] rounded-xl flex flex-col items-center'>
         <div className='text-black  flex-col flex  items-center justify-center py-[1rem]'>
-            <h1 className='text-3xl pb-2'>
+            <h1 className='text-3xl pb-2 font-body font-bold'>
                 Encontre seu Imóvel
             </h1>
-            <h3 className='text-base'>
+            <h3 className='text-base font-rest'>
                 Vamos achar o lar ideal para você!
             </h3>
         </div>
         
-        <div className="flex w-full flex-wrap md:flex justify-between items-center px-20">
+        <div className="flex w-full flex-wrap md:flex justify-between items-center px-20 font-rest">
           {/* Botão 1 */}
         <Select 
           label="Localização" 

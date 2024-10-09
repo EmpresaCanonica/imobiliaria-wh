@@ -21,7 +21,7 @@ export function ItemMenuNav({ name, anchorId, icon }: Props) {
     <button className="w-30 flex items-center hover:scale-125" onClick={scrollToSection}>
       {/* Renderiza o ícone, se houver */}
       {icon && <span className="mr-1">{icon}</span>}
-      <span className='text-p-white font-bold mx-2 px-2 py-1 '>
+      <span className='text-p-white font-bold mx-2 px-2 py-1 font-rest '>
         {name}
       </span>
     </button>

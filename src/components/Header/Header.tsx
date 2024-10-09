@@ -42,7 +42,7 @@ export default function Header () {
   }, []);
 
   return (
-  <nav className={`fixed h-[8rem] w-full flex items-center z-40 transition-colors duration-500 ${navBg ? 'bg-detail-light-beige shadow-2xl  ' : 'bg-transparent'}`}>
+  <nav className={` fixed h-[8rem] w-full flex items-center z-40 transition-colors duration-500 ${navBg ? 'bg-detail-light-beige shadow-2xl  ' : 'bg-transparent'}`}>
     <div className="flex mx-auto items-center justify-between w-[70.5rem] ">
       <ul className='hidden md:flex mx-auto items-center justify-between w-[70.5rem]  text-primary-brown font-bold'>
         
@@ -69,7 +69,7 @@ export default function Header () {
 
       <a href='/'>
               <Image
-                  className='md:hidden h-16 w-32 mt-[1rem] ml-[2rem] transition-transform duration-300 ease-in-out transform hover:scale-110 active:opacity-75 cursor-pointer'
+                  className='md:hidden h-12 w-32 mt-[1rem] ml-[2rem] transition-transform duration-300 ease-in-out transform hover:scale-110 active:opacity-75 cursor-pointer'
                   src={LogoH}
                   alt="Logo"
               />
@@ -84,7 +84,7 @@ export default function Header () {
                       
         <a href='/'>
             <Image
-                className='h-24 w-32 mt-6 ml-8 transition-transform duration-300 ease-in-out transform hover:scale-110 active:opacity-75 cursor-pointer'
+                className='h-12 w-32 mt-[3rem] ml-8 transition-transform duration-300 ease-in-out transform hover:scale-110 active:opacity-75 cursor-pointer'
                 src={LogoH}
                 alt="Logo"
             />
