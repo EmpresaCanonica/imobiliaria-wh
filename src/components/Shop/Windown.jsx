@@ -9,7 +9,7 @@ import { FaSearch } from "react-icons/fa";
 export default function Window (){
   const color = "blue"
     return (
-    <div className='w-[30rem] md:w-[49rem] bg-off md:h-[13rem] h-[20rem] rounded-xl flex flex-col items-center'>
+    <div className='w-[25rem] md:w-[49rem] bg-off md:h-[13rem] h-[20rem] rounded-xl flex flex-col items-center'>
         <div className='text-black  flex-col flex  items-center justify-center py-[1rem]'>
             <h1 className='text-3xl pb-2 font-body font-bold'>
                 Encontre seu Imóvel
@@ -19,12 +19,12 @@ export default function Window (){
             </h3>
         </div>
         
-        <div className="flex w-full flex-wrap md:flex justify-between items-center px-20 font-rest">
+        <div className="flex w-full flex-wrap md:flex justify-between items-center md:px-20 px-10 font-rest">
           {/* Botão 1 */}
         <Select 
           label="Localização" 
           variant={"bordered"}
-          className=" w-[10rem]  rounded-2xl py-2 px-2"
+          className="  w-[8rem]  md:w-[10rem]  rounded-2xl py-2 px-2"
           classNames={{
             helperWrapper: "bg-red-500  ",
             label: "group-data-[filled=true]:-translate-y-5 group-data-[filled=true]:text-off text-off ",
@@ -46,7 +46,7 @@ export default function Window (){
         <Select 
           label="Tipo" 
           variant={"bordered"}
-          className=" w-[10rem]  rounded-2xl py-2 px-2"
+          className=" w-[8rem]  md:w-[10rem] rounded-2xl py-2 px-2"
           classNames={{
             helperWrapper: "bg-red-500  ",
             label: "group-data-[filled=true]:-translate-y-5 group-data-[filled=true]:text-off text-off ",
@@ -68,7 +68,7 @@ export default function Window (){
         <Select 
           label="Valor" 
           variant={"bordered"}
-          className=" w-[14rem]  rounded-2xl py-4 px-2"
+          className=" w-[10rem] md:w-[14rem] rounded-2xl py-4 px-2"
           classNames={{
             helperWrapper: "bg-red-500  ",
             label: "group-data-[filled=true]:-translate-y-5 group-data-[filled=true]:text-off text-off ",
