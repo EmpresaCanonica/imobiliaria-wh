@@ -1,15 +1,15 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from 'next/image'
+import Image from 'next/image';
 
-import LogoV from '@/assets/Logo Vertical.svg'
-import LogoH from '@/assets/Logo Horizontal.svg'
+import LogoV from '@/assets/Logo Vertical.svg';
+import LogoH from '@/assets/Logo Horizontal.svg';
 
-import {ItemMenu} from '@/components/UI/NavbarButton'
-import {ItemMenuNav} from '@/components/UI/NavbarButtonMobile'
+import {ItemMenu} from '@/components/UI/NavbarButton';
+import {ItemMenuNav} from '@/components/UI/NavbarButtonMobile';
 
 import { HiInformationCircle } from "react-icons/hi";
-import { FaPhone, FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 import { MdShoppingCart } from "react-icons/md";
 import { FaUserFriends, FaSearch } from "react-icons/fa";
 import { TiHome } from "react-icons/ti";

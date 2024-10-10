@@ -4,8 +4,6 @@ import House from '@/assets/houses.jpg'
 import {Input} from "@nextui-org/input";
 import {Textarea} from "@nextui-org/input";
 import {Button} from "@nextui-org/button";
-import { label } from 'framer-motion/client';
-
 
 export default function ContactUs() {
   return (

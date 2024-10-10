@@ -7,7 +7,6 @@ import {Button} from "@nextui-org/button";
 import { FaSearch } from "react-icons/fa";
 
 export default function Window (){
-  const color = "blue"
     return (
     <div className='w-[30rem] md:w-[49rem] bg-off md:h-[13rem] h-[20rem] rounded-xl flex flex-col items-center'>
         <div className='text-black  flex-col flex  items-center justify-center py-[1rem]'>
