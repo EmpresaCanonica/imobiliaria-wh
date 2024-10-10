@@ -1,8 +1,6 @@
 'use client';
-import React from 'react'
-import {Button} from "@nextui-org/button";
-import Image from 'next/image'
-import { FaCirclePlus } from "react-icons/fa6";
+import React from 'react';
+import Image from 'next/image';
 
 type Props = {
   name: string;

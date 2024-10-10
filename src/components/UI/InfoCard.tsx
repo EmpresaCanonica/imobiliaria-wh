@@ -1,5 +1,4 @@
 'use client';
-import { desc } from 'framer-motion/client';
 import React from 'react'
 
 type Props = {

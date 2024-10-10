@@ -2,12 +2,9 @@
 import React from 'react'
 import Card from '@/components/UI/InfoCard'
 
-import { FaUserFriends } from "react-icons/fa";
 import { IoShieldCheckmark } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
 import { HiLightBulb } from "react-icons/hi";
-
-
 
 
 export default function Shop (){
